@@ -1,0 +1,20 @@
+/*  */
+body.noTransition * {
+    /* JS CLASS */
+    transition: none !important;
+}
+
+li.link {
+    &::after {
+        transition: width 0.2s;
+    }
+}
+
+li.link:hover {
+    cursor: pointer;
+
+    &::after {
+        transition: width 0.3s;
+        width: 100%;
+    }
+}

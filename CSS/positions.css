@@ -1,0 +1,72 @@
+/* NAVBAR */
+
+body {
+    height: 150vh;
+}
+
+.h_navbar {
+    padding-block: 1rem;
+    position: relative;
+}
+
+ul.link_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-inline: 30%;
+    width: 100%;
+}
+
+/* icon in the navbar */
+li.svg img {
+    height: 4rem;
+    position: absolute;
+    left: 2rem;
+    bottom: -15%;
+}
+
+li.link {
+    position: relative;
+    padding: 0.3rem;
+}
+
+li.link::after {
+    content: ".";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+}
+
+main {
+    margin-inline: 10%;
+}
+
+.topics_grid {
+    margin-block: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+div.topic {
+    height: 12rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div.topic h3 {
+    height: 4rem;
+    padding-inline: 0.6rem;
+    padding-top: 0.8rem;
+    border-radius: 10px 10px 0 0;
+}
+
+div.topic p {
+    padding: 1ch;
+}
